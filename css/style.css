@@ -1,0 +1,313 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+*{box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.font_pacifico{font-family: 'Pacifico', cursive;}
+
+
+
+/* #header part */
+#header{}
+#header #top{
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+}
+
+
+#header #top .wrap{
+    width: 1160px;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* background-color: #777; */
+    color: #fff;
+}
+#header #top .wrap .left{
+    float: left;
+    /* 부모 공간으로부터 좌측에 배치 */
+}
+#header #top .wrap .left ul{}
+#header #top .wrap .left ul li{
+    float: left;
+    /*내부에서 좌측 기준으로 가로 배치*/
+    margin-right: 10px;
+    /* background-color: #950; */
+}
+#header #top .wrap .left ul li p{
+    line-height: 30px;
+    font-size: 14px;
+}
+#header #top .wrap .right{
+    float: right;
+    padding: 8px 0;
+    /* 부모 공간으로부터 우측에 배치 */
+}
+#header #top .wrap .right ul{}
+#header #top .wrap .right ul li{
+    float: left;
+    margin-left: 10px;
+    /* background-color: #000; */
+}
+#header #top .wrap .right ul li a{
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+    color: #fff;
+}
+#header #top .wrap .right ul li:hover a{
+    color: #f60;
+}
+
+
+#header #main{
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+#header #main .dark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#header #main .dark .wrap{
+    width: 1160px;
+    height: 66px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#header #main .dark .wrap .logo{
+    float: left;
+    padding: 17px 0;
+}
+#header #main .dark .wrap .logo a{}
+#header #main .dark .wrap .logo a img{
+    display: block;
+}
+#header #main .dark .wrap .menu{
+    float: right;
+}
+#header #main .dark .wrap .menu ul{
+    float: left;
+}
+#header #main .dark .wrap .menu ul li{
+    float: left;
+}
+#header #main .dark .wrap .menu ul li a{
+    display: block;
+    padding: 0 20px;
+    line-height: 66px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+#header #main .dark .wrap .menu ul li:hover a{
+    color: #f60;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#header #main .dark .wrap .menu .reserve_btn{
+    float: left;
+    width: 180px;
+    height: 66px;
+    /* background-color: #ff0; */
+    text-align: right;
+    padding-top: 12px;
+}
+#header #main .dark .wrap .menu .reserve_btn a{
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #f60;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#header #main .dark .wrap .menu .reserve_btn a:hover{
+    background-color: #fff;
+    color: #f60;
+}
+
+
+/* 부모(position: relative) 기준으로 자식(position: absolute) 중앙배치 */
+/* #header #main .dark .main_title{
+    width: 1160px;
+    height: 494px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+#header #main .dark .main_title .cont{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+} */
+
+/* 부모(display: table;) 기준으로 자식(display: table-cell;) 중앙배치 */
+#header #main .dark .main_title{
+    width: 1160px;
+    height: 494px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: table;
+}
+#header #main .dark .main_title .cont{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+#header #main .dark .main_title .cont h1{
+    font-size: 54px;
+    line-height: 72px;
+}
+#header #main .dark .main_title .cont p{
+    font-size: 16px;
+    padding: 40px 0;
+}
+#header #main .dark .main_title .cont ul{
+    font-size: 0;
+}
+#header #main .dark .main_title .cont ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#header #main .dark .main_title .cont ul li a{
+    display: block;
+    font-size: 16px;
+    width: 202px;
+    height: 44px;
+    border: 1px solid #f60;
+    border-radius: 8px;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 42px;
+    font-weight: bold;
+}
+#header #main .dark .main_title .cont ul li:hover a{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #f60;
+}
+
+
+/* #story part */
+#story{
+    height: 600px;
+    overflow: hidden;
+}
+#story .wrap{
+    width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+#story .wrap .title_part{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#story .wrap .title_part .title{
+    font-size: 54px;
+    line-height: 72px;
+    color: #555;
+}
+#story .wrap .title_part .title span{
+    color: #f60;
+}
+#story .wrap .title_part p{
+    padding-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 
+#story .wrap .cont{}
+#story .wrap .cont .img_part{
+    float: left;
+    width: calc(50% - 30px);
+    height: 200px;
+    margin: 0 15px;
+    background-size: cover;
+    background-position: 50% 85%;
+    background-image: url(../img/cook-01.jpg);
+    border-radius: 8px;
+}
+#story .wrap .cont .txt_part{
+    float: left;
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    position: relative;
+}
+#story .wrap .cont .txt_part p{
+    padding: 40px 0;
+    font-size: 16px;
+    color: #555;
+}
+#story .wrap .cont .txt_part a{
+    background-color: #ffa;
+}
+#story .wrap .cont .txt_part a img{
+    display: block;
+    margin: 0 auto;
+} */
+
+
+/* 풀이 */
+#story .wrap .cont{
+    font-size: 0;
+}
+#story .wrap .cont > div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 15px;
+    font-size: 16px;
+}
+#story .wrap .cont > div.img_part{
+    height: 200px;
+}
+#story .wrap .cont > div.img_part .image{
+    width: 100%;
+    height: 100%;
+    background-color: #aaf;
+    background-image: url(../img/cook-01.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+}
+#story .wrap .cont > div.txt_part{
+    /* background: #faa; */
+    text-align: center;
+}
+#story .wrap .cont > div.txt_part p{
+    color: #555;
+    padding-bottom: 40px;
+}
+#story .wrap .cont > div.txt_part a{
+    display: inline-block;
+    height: 19px;
+}
+#story .wrap .cont > div.txt_part a img{}
+
+#story .wrap .deco_img{
+    padding-top: 100px;
+    /* background-color: #faa; */
+}
+#story .wrap .deco_img img{
+    width: 100%;
+
+}
