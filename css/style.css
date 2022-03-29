@@ -12,7 +12,17 @@ a{text-decoration: none;}
 
 .font_pacifico{font-family: 'Pacifico', cursive;}
 
-
+/* button */
+.arrow_btn{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.arrow_btn a{
+    display: inline-block;
+}
+.arrow_btn a img{
+    display: block;
+}
 
 /* #header part */
 #header{}
@@ -453,17 +463,6 @@ a{text-decoration: none;}
     bottom: 20px;
 }
 
-#special #main_cont .arrow_btn{
-    text-align: center;
-    padding-bottom: 60px;
-}
-#special #main_cont .arrow_btn a{
-    display: inline-block;
-}
-#special #main_cont .arrow_btn a img{
-    display: block;
-}
-
 
 /*
 wowjs의 작동 연기 시간 제어
@@ -531,6 +530,7 @@ wowjs의 작동 연기 시간 제어
 #dishes .wrap .cont_part .cate_box .cate_detail{
     position: relative;
     font-size: 0;
+    margin-bottom: 30px;
     /* background-color: #aaf; */
 }
 #dishes .wrap .cont_part .cate_box .cate_detail > div{
@@ -566,13 +566,246 @@ wowjs의 작동 연기 시간 제어
     background-color: #cfcfcf;
 }
 
-#dishes .wrap .arrow_btn{
+
+
+#service{
+    background-color: #ededed;
+}
+#service .wrap{
+    width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
     text-align: center;
-    padding: 40px 0 100px;
 }
-#dishes .wrap .arrow_btn a{
-    display: inline-block;
+#service .wrap .title{
 }
-#dishes .wrap .arrow_btn a img{
+#service .wrap .title h2{
+    font-size: 54px;
+    line-height: 72px;
+    padding: 60px 0 20px;
+}
+#service .wrap .title p{
+    padding-bottom: 80px;
+}
+
+#service .wrap .content{
+    margin-bottom: 30px;
+}
+#service .wrap .content:after{
+    content: "";
     display: block;
+    clear: both;
+}
+#service .wrap .content .box{
+    float: left;
+    width: calc(100% / 3 - 20px);
+    height: 360px;
+    padding: 40px;
+    margin: 0 10px;
+    border-radius: 8px;
+    background-color: #fee;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+#service .wrap .content .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #f99;
+}
+#service .wrap .content .box img{
+    padding-top: 40px;
+}
+#service .wrap .content .box .txt{}
+#service .wrap .content .box .txt h3{
+    font-size: 20px;
+    padding: 20px 0;
+}
+#service .wrap .content .box .txt p{}
+
+
+
+#subscribe{
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-image: url(../img/6.jpg);
+}
+#subscribe .dark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#subscribe .wrap{
+    width: 1160px;
+    height: 460px;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    display: table;
+}
+#subscribe .dark .wrap .txt_box{
+    display: table-cell;
+    vertical-align: middle;
+}
+#subscribe .dark .wrap .txt_box h2{
+    font-size: 54px;
+    line-height: 72px;
+    padding: 20px 0;
+}
+#subscribe .dark .wrap .txt_box p{
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+#subscribe .dark .wrap .txt_box .email_box{
+    width: 730px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #f60;
+    border-radius: 8px;
+    padding: 4px 20px 6px 0;
+    margin: 0 auto;
+}
+#subscribe .dark .wrap .txt_box .email_box #newsEmail{
+    width: calc(100% - 46px);
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    padding: 0 0 0 20px;
+}
+#subscribe .dark .wrap .txt_box .email_box button{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #f60;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+
+
+
+#register{
+    background-color: #ededed;
+}
+#register .wrap{
+    width: 1160px;
+    height: 400px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+#register .wrap:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#register .wrap #map{}
+#register .wrap #map, #register .wrap form{
+    float: left;
+    width: calc(50% - 40px);
+    height: calc(100% - 40px);
+    margin: 20px;
+}
+#register .wrap form legend h2{
+    font-size: 54px;
+    line-height: 72px;
+    padding: 20px 0;
+    color: #555;
+    text-align: center;
+}
+#register .wrap form fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#register .wrap form fieldset .userinfo{
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+#register .wrap form fieldset #sendEmail{
+    height: 12px;
+    accent-color: #e60;
+    cursor: pointer;
+}
+#register .wrap form fieldset #regiSub{
+    display: block;
+    width: 240px;
+    height: 41px;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-left: calc(100% - 240px);
+    cursor: pointer;
+}
+
+
+
+#footer{
+    background-color: #000;
+}
+#footer .wrap{
+    width: 1160px;
+    height: 220px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer .wrap .sns{}
+#footer .wrap .sns button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}#footer .wrap .sns button:hover{
+    color: #f60;
+    border: 1px solid #f60;
+}
+#footer .wrap .logo_f a{
+    display: inline-block;
+    margin: 10px 0;
+}
+#footer .wrap .logo_f a img{
+    display: block;
+}
+#footer .wrap p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: lighter;
+    padding: 14px 0;
+}
+
+/* #topBtn (상단으로 이동) */
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+#topBtn a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
